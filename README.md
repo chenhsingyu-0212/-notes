@@ -3,7 +3,7 @@
 <ul>
   <li>資訊工程(理論)</li>
     <ul>
-      <li><a href="https://github.com/chenhsingyu-0212/-notes/edit/main/Introduction%20to%20Computer.md">計算機概論</a></li>
+      <li><a href="https://github.com/chenhsingyu-0212/-notes/blob/main/Introduction%20to%20Computer.md">計算機概論</a></li>
     </ul>
   <li>資訊工程(程式)</li>
     <ul>
