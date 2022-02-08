@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
     <link rel="stylesheet" href="../notes.css?v1.1.1" media="screen,projection"/>
@@ -17,4 +17,4 @@
       <li><a href="./Froms.md">HTML表單</a></li>
     </ul>
   </body>
-</head>
+</html>
