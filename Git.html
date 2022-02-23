@@ -2,40 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="./notes.css?v1.2" media="screen,projection"/>
+    <link rel="stylesheet" href="./notes.css?v1.7" media="screen,projection"/>
     <title>Git</title>
   </head>
   <body>
     <div id="header">
-      <h1>Git</h1>
+      <h1 style="display:inline-block;">Git</h1>
+      <a href="../notes/">回首頁</a>
     </div>
-    <div>
-      <h2>安裝git - Windows</h2>
-      <p>git官網:https://git-scm.com/download/win</p>
-      <p>然後開啟 Git Bash</p><br/>
-      <h2>設定git識別資料</h2>
-      <p>在你安裝 Git 後首先應該做的事是設定使用者名稱及電子郵件。</p>
-      <p>這一點非常重要，因為每次 Git 的提交會使用這些資訊，而且提交後不能再被修改。</p>
-      <p>git config --global user.name "[使用者名字]"</p>
-      <p>git config --global user.email "[電子信箱]"</p>
-      <p>若你有傳遞 --global 參數，只需要做這工作一次，因為在此系統，不論 Git 做任何事都會採用此資訊。</p><br/>
-      <h2>檢查讀者的設定</h2>
-      <p>git config --list</p><br/>
-      <h2>常用指令</h2>
-      <p>git init<br/>建立新的本地端儲存庫(Repository)</p>
-      <p>git clone [URL]</br>複製遠端的 Repository 檔案到本地端。</p>
-      <p>git status<br/>檢查本地端檔案異動狀態。</p>
-      <p>git add [檔案或資料夾]<br/>將指定的檔案(或資料夾)加入版本控制。用 git add . 可加入全部。</p>
-      <p>git commit -m "[修改內容]"<br/>提交(commit)目前的異動並透過 -m 參數設定摘要說明文字。</p>
-      <p>git push<br/>將本地端 Repository 的 commit 發佈到遠端。</p>
-      <p>git push origin [BRANCH_NAME]<br/>發佈至遠端指定的分支(Branch)。</p>
-      <p>git pull<br/>檔案抓取下來到自己的本地端。</p>
-      <p>git branch<br/>查看分支。</p>
-      <p>git branch [BRANCH_NAME]<br/>建立分支。</p>
-      <p>git checkout [BRANCH_NAME]<br/>取出指定的分支。</p>
-      <p>git checkout -b [BRANCH_NAME]<br/>建立並跳到該分支。</p>
-      <p>git branch -D [BRANCH_NAME]<br/>強制刪除指定分支(須先切換至其他分支再做刪除)。</p>
-      <p>git branch -m [OLD_BRANCH_NAME] [NEW_BRANCH_NAME]<br/>修改分支名稱。</p>
-    </div>
+    <div class="callback"></div>
+    <div class="grid-container">
+        <div class="item1">
+          <ul>
+            <li><a href="#1">安裝git - Windows</a></li>
+            <li><a href="#2">設定git識別資料</a></li>
+            <li><a href="#3">檢查讀者的設定</a></li>
+            <li><a href="#4">常用指令</a></li>
+          </ul>
+        </div>
+        <div class="item2">
+            <h2 id="1">安裝git - Windows</h2>
+            <p>git官網:https://git-scm.com/download/win</p>
+            <p>然後開啟 Git Bash</p><br/>
+            <h2 id="2">設定git識別資料</h2>
+            <p>在你安裝 Git 後首先應該做的事是設定使用者名稱及電子郵件。</p>
+            <p>這一點非常重要，因為每次 Git 的提交會使用這些資訊，而且提交後不能再被修改。</p>
+            <p>git config --global user.name "[使用者名字]"</p>
+            <p>git config --global user.email "[電子信箱]"</p>
+            <p>若你有傳遞 --global 參數，只需要做這工作一次，因為在此系統，不論 Git 做任何事都會採用此資訊。</p><br/>
+            <h2 id="3">檢查讀者的設定</h2>
+            <p>git config --list</p><br/>
+            <h2 id="4">常用指令</h2>
+            <p>git init<br/>建立新的本地端儲存庫(Repository)</p>
+            <p>git clone [URL]</br>複製遠端的 Repository 檔案到本地端。</p>
+            <p>git status<br/>檢查本地端檔案異動狀態。</p>
+            <p>git add [檔案或資料夾]<br/>將指定的檔案(或資料夾)加入版本控制。用 git add . 可加入全部。</p>
+            <p>git commit -m "[修改內容]"<br/>提交(commit)目前的異動並透過 -m 參數設定摘要說明文字。</p>
+            <p>git push<br/>將本地端 Repository 的 commit 發佈到遠端。</p>
+            <p>git push origin [BRANCH_NAME]<br/>發佈至遠端指定的分支(Branch)。</p>
+            <p>git pull<br/>檔案抓取下來到自己的本地端。</p>
+            <p>git branch<br/>查看分支。</p>
+            <p>git branch [BRANCH_NAME]<br/>建立分支。</p>
+            <p>git checkout [BRANCH_NAME]<br/>取出指定的分支。</p>
+            <p>git checkout -b [BRANCH_NAME]<br/>建立並跳到該分支。</p>
+            <p>git branch -D [BRANCH_NAME]<br/>強制刪除指定分支(須先切換至其他分支再做刪除)。</p>
+            <p>git branch -m [OLD_BRANCH_NAME] [NEW_BRANCH_NAME]<br/>修改分支名稱。</p>
+          </div>
+      </div>
   </body>
 </html>

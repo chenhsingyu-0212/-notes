@@ -9,22 +9,24 @@
     --red:#C00000;
     --mainword:black;;
     --word:#05615F;
+    --first:#155799;
+    --second:#159957;
 }
 *{
     box-sizing: border-box;
 }
 body{
     margin:0;/*去除邊界*/
-    background-color:var(--white);
+    background-color:#fff7a9;
 }
 h1{
-    text-align: center;
+    font-weight: bold;
+    color:var(--second);
 }
 #header{
-    background-color: var(--main);
+    background-image: linear-gradient(120deg, aliceblue, white);
     padding:10px 20px;
     width:100%;
-    border-bottom: 20px solid var(--adorn);
 }
 #bar{
     background-color: var(--white);
@@ -54,15 +56,26 @@ h1{
     border-color:var(--adorn);
     text-align: center;
 }
+.callback{
+    background-image: linear-gradient(120deg, #155799, #159957);
+    padding:10px;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 20% 80%;
     padding: 50px 20px;
 }
 .grid-container > div {
-    padding: 20px;
     margin: 10px;
     font-size: 16px;
-    background-color: var(--some);
-    border-color: var(--adorn);
+}
+.item1{
+    padding: 20px;
+}
+.item2{
+    padding: 50px 200px;
+    background: #ffd591;
+    border-radius: 20px;
+    box-shadow: 10px 10px #157b76;
+    border: 2px solid #157b76;
 }
