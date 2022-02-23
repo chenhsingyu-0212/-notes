@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../notes.css?v1.1.10" media="screen,projection"/>
+    <title>HTNL_elements</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>HTNL_elements</h1>
+    </div>
+    <div class="grid-container">
+      <div class="item1">
+        <ul>
+          <li><a href="./elements.html">HTML元素</a></li>
+          <li><a href="./Headings.html">HTML標題</a></li>
+          <li><a href="./Paragraphs.html">HTML段落</a></li>
+          <li><a href="./TextFormatting.html">HTML文本格式</a></li>
+          <li><a href="./Links.html">HTML鏈接</a></li>
+          <li><a href="./Images.html">HTML圖像</a></li>
+          <li><a href="./Tables.html">HTML表格</a></li>
+          <li><a href="./Lists.html">HTML列表</a></li>
+          <li><a href="./Froms.html">HTML表單</a></li>
+        </ul>
+      </div>
+      <div class="item2">
+        <h2>HTML鏈接</h2>
+        <h3>介紹</h3>
+        <ul>
+          <li>The inline elements in HTML</li>
+          <li>用於從一個頁面鏈接到另一個頁面</li>
+          <li>不一定要文字，圖形也可以</li>
+        </ul>
+        <h3>語法</h3>
+        <p>
+          &lt;a&gt;...&lt;/a&gt;<br/>
+        </p>
+        <h3>屬性</h3>
+        <p>
+          <ol>
+            <li>
+              href="..."
+              <ul style="list-style-type: disc;">
+                <li>
+                  <i>URL</i>
+                </li><br/>
+                <li>
+                  <i>malito: email</i><br/>
+                  *可直接發送email訊息
+                </li>
+              </ul><br/>
+            </li>
+            <li>
+              target="..."
+              <ul style="list-style-type: disc;">
+                <li>
+                  <i>_self</i><br/>
+                  *(默認)在同視窗開啟鏈接
+                </li><br/>
+                <li>
+                  <i>_blank</i><br/>
+                  *在新視窗開啟鏈接<br/>
+                  <a href="#">可能有CSRF攻擊</a>
+                </li><br/>
+                <li>
+                  <i>_parent</i><br/>
+                  *在父框架中打開鏈接(出現在上一層視窗)
+                </li><br/>
+                <li>
+                  <i>_top</i><br/>
+                  *在整個窗口中打開鏈接(整頁顯示)
+                </li>
+              </ul><br/>
+            </li>
+            <li>
+              title="..."
+              *額外訊息，將鼠標移到鏈接上，會出現提示文字
+            </li>
+          </ol>
+        </p>
+        <h3>特殊用法</h3>
+        <p>
+          書籤 -> 可指向同一頁面的其他區域<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="<i>#value</i>"&gt;...&lt;/a&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="<i>value</i>"&gt;...&lt;/a&gt;
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

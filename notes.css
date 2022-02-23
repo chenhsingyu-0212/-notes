@@ -1,0 +1,67 @@
+:root{
+    --white:white;
+    --main:#9CD4D0;
+    --some:#DEEBF7;
+    --adorn:#079291;
+    --yellow:#FFE699;
+    --green:#8EC222;
+    --blue:#44546A;
+    --red:#C00000;
+    --mainword:black;;
+    --word:#05615F;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;/*去除邊界*/
+    background-color:var(--white);
+}
+h1{
+    text-align: center;
+}
+#header{
+    background-color: var(--main);
+    padding:10px 20px;
+    width:100%;
+}
+#bar{
+    background-color: var(--white);
+    overflow:hidden;
+    width:100%;
+}
+#bar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#bar a{
+    float:left;
+    padding:15px;
+    color:white;
+    text-decoration: none;
+}
+#bar a:hover{
+    background-color:white;
+    color:black;
+}
+#footer{
+    background-color:gray;
+    padding:1px;
+}
+.content{
+    border-color:var(--adorn);
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 50px 20px;
+}
+.grid-container > div {
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: var(--some);
+    border-color: var(--adorn);
+}
