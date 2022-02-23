@@ -24,7 +24,7 @@ h1{
     background-color: var(--main);
     padding:10px 20px;
     width:100%;
-    border-bottom: 2px soild var(--adorn);
+    border-bottom: 20px solid var(--adorn);
 }
 #bar{
     background-color: var(--white);

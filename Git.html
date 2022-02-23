@@ -17,7 +17,10 @@
       <p>在你安裝 Git 後首先應該做的事是設定使用者名稱及電子郵件。</p>
       <p>這一點非常重要，因為每次 Git 的提交會使用這些資訊，而且提交後不能再被修改。</p>
       <p>git config --global user.name "[使用者名字]"</p>
-      <p>git config --global user.email "[電子信箱]"</p><br/>
+      <p>git config --global user.email "[電子信箱]"</p>
+      <p>若你有傳遞 --global 參數，只需要做這工作一次，因為在此系統，不論 Git 做任何事都會採用此資訊。</p><br/>
+      <h2>檢查讀者的設定</h2>
+      <p>git config --list</p><br/>
       <h2>常用指令</h2>
       <p>git init<br/>建立新的本地端儲存庫(Repository)</p>
       <p>git clone [URL]</br>複製遠端的 Repository 檔案到本地端。</p>
@@ -27,12 +30,12 @@
       <p>git push<br/>將本地端 Repository 的 commit 發佈到遠端。</p>
       <p>git push origin [BRANCH_NAME]<br/>發佈至遠端指定的分支(Branch)。</p>
       <p>git pull<br/>檔案抓取下來到自己的本地端。</p>
-      <p>git branch</p>
-      <p>git branch [BRANCH_NAME]</p>
-      <p>git checkout [BRANCH_NAME]</p>
-      <p>git checkout -b [BRANCH_NAME]</p>
-      <p>git branch -D [BRANCH_NAME]</p>
-      <p>git branch -m [OLD_BRANCH_NAME] [NEW_BRANCH_NAME]</p>
+      <p>git branch<br/>查看分支。</p>
+      <p>git branch [BRANCH_NAME]<br/>建立分支。</p>
+      <p>git checkout [BRANCH_NAME]<br/>取出指定的分支。</p>
+      <p>git checkout -b [BRANCH_NAME]<br/>建立並跳到該分支。</p>
+      <p>git branch -D [BRANCH_NAME]<br/>強制刪除指定分支(須先切換至其他分支再做刪除)。</p>
+      <p>git branch -m [OLD_BRANCH_NAME] [NEW_BRANCH_NAME]<br/>修改分支名稱。</p>
     </div>
   </body>
 </html>
