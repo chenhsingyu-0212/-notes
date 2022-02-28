@@ -4,10 +4,12 @@
   <li>資訊工程(理論)</li>
     <ul>
       <li><a href="./Invitation to Computer Science.html">計算機概論</a></li>
+      <li><a href="./Date Communications and Networking/Introduction.html">計算機網路</a></li>
+      <li><a href="./Digital Design.html">數位邏輯設計</a></li>
     </ul><br/>
   <li>資訊工程(程式)</li>
     <ul>
-      <li><a href="./HTML.html">HTML</a></li>
+      <li><a href="./HTML/HTML.html">HTML</a></li>
       <li><a href="./CSS.html">CSS</a></li>
       <li><a href="./C.html">C</a></li>
       <li><a href="./C++.html">C++</a></li>
@@ -20,5 +22,6 @@
   <li>數學</li>
     <ul>
       <li><a href="./Calculus.html">微積分</a></li>
+      <li><a href="./Discrete Mathematics.html">離散數學</a></li>
     </ul><br/>
 </ul>
