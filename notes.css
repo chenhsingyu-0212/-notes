@@ -23,6 +23,8 @@ h1{
     font-weight: bold;
     color:var(--second);
 }
+
+
 #header{
     background-image: linear-gradient(120deg, aliceblue, white);
     padding:10px 20px;
@@ -52,6 +54,8 @@ h1{
     background-color:gray;
     padding:1px;
 }
+
+
 .content{
     border-color:var(--adorn);
     text-align: center;
@@ -63,14 +67,35 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: 20% 80%;
-    padding: 50px 20px;
+    padding: 50px 80px 50px 0px;
 }
 .grid-container > div {
     margin: 10px;
     font-size: 16px;
 }
-.item1{
-    padding: 20px;
+.item1 ul{
+    margin:0;
+    padding:0;
+}
+.item1 li{
+    text-align: center;
+    list-style-type: none;
+    margin:10px;
+    padding:10px;
+}
+.item1 a{
+    text-align: center;
+    text-decoration: none;
+    color: #157b76;
+    background-color: #f9fcff;
+    border-radius: 5px;
+    border:2px solid #157b76;
+    margin: 10px;
+    padding: 10px;
+}
+.item1 a:hover{
+    color: #f9fcff;
+    background-color: #157b76;
 }
 .item2{
     padding: 50px 200px;
@@ -78,4 +103,19 @@ h1{
     border-radius: 20px;
     box-shadow: 10px 10px #157b76;
     border: 2px solid #157b76;
+}
+.back a{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: #f9fcff;
+    background-color: #157b76;
+    border:2px solid #157b76;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+.back a:hover{
+    color: #157b76;
+    background-color: #f9fcff;
 }
