@@ -80,10 +80,9 @@ h1{
 .item1 li{
     text-align: center;
     list-style-type: none;
-    margin:10px;
-    padding:10px;
 }
 .item1 a{
+    display: block;
     text-align: center;
     text-decoration: none;
     color: #157b76;

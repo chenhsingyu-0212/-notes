@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="../notes.css?v1.13" media="screen,projection"/>
-    <title>Date Communications and Networking</title>
+    <link rel="stylesheet" href="../notes.css?v1.16" media="screen,projection"/>
+    <title>Data Communications and Networking</title>
   </head>
   <body>
     <div id="header" class="back">
-      <h1 style="display:inline-block;">Date Communications and Networking</h1>
+      <h1 style="display:inline-block;">Data Communications and Networking</h1>
       <a href="../../notes/">回首頁</a>
     </div>
     <div class="callback"></div>
@@ -15,6 +15,11 @@
         <div class="item1">
           <ul>
             <li><a href="./Introduction.html">Chapter 1</a></li>
+            <li><a href="#1.1">1.1 Data Communications</a></li>
+            <li><a href="#1.2">1.2 Networks</a></li>
+            <li><a href="#1.3">1.3 Network Types</a></li>
+            <li><a href="#1.4">1.4 Internet History</a></li>
+            <li><a href="#1.5">1.5 Standards and Administration</a></li>
             <li><a href="./Headings.html">Chapter 2</a></li>
             <li><a href="./Paragraphs.html">Chapter 3</a></li>
             <li><a href="./TextFormatting.html">Chapter 4</a></li>
@@ -27,13 +32,13 @@
         </div>
         <div class="item2">
             <h2>Chapter 1_Introduction</h2>
-            <h3>Date Communications</h3>
+            <h3 id="1.1">1.1 Data Communications</h3>
             <h4>Components</h4>
             <p>
-              Telecommunication(電話通訊) v.s. Date communication(資料通訊)<br/>
+              Telecommunication(電話通訊) v.s. Data communication(資料通訊)<br/>
               <ul>
                 <li>telecommunication:<br/>電話接通後，電話兩端不可再有人同時打入電話。</li><br/>
-                <li>date communication:<br/>達到可以多方傳遞，或只同時傳遞。</li><br/>
+                <li>data communication:<br/>達到可以多方傳遞，或只同時傳遞。</li><br/>
               </ul>
               Five components of date communication:<br/>
               <ol>
@@ -54,24 +59,148 @@
               </ul>
             </p>
 
-            <h3>Networks</h3>
+            <h3 id="1.2">1.2 Networks</h3>
             <p>
-
+              A network is the interconnection of a set of devices capable of communication.<br/>
+              兩種物體之間，透過某種形式互相連接，以達到傳送的目的。<br/>
+              由軟硬體組成，並將資料從本地端傳送到另一端。<br/><br/>
+              Devices in the definition can be:<br/>
+              <ul>
+                <li>host(主機)</li><br/>
+                <li>connecting device(連接設備)
+                  <ul><br/>
+                    <li>router(路由器):<br/>connects the network to other networks.</li><br/>
+                    <li>switch(交換機):<br/>connects devices together.</li><br/>
+                    <li>modem(modulator-demodulator)(數據機):<br/>changes the form of data.</li><br/>
+                  </ul>
+                </li><br/>
+              </ul>
+            </p>
+            <h4>Network Criteria</h4>
+            <p>
+              <ol>
+                <li>Performance(性能):<br/>測量效能有很多方法，包括傳送時間、回覆時間。<br/>
+                    傳送時間是從一端傳送訊息至另一端的時間總和。<br/>
+                    回覆時間是個詢問和反應之間所經過的時間。<br/>
+                    網路效能依賴一些因素，包含使用者的數量、傳輸媒介的種類、連接硬體的能力、軟體的效率。<br/>Performance is often evaluated by two networking metrics: throughput and delay.</li><br/>
+                <li>Reliability(可靠性):<br/>除了交付的準確性之外，網路可靠性還通過故障頻率、從故障中恢復所需的時間、網路在災難中的穩健性來衡量。</li><br/>
+                <li>Security(安全性):<br/>網路安全問題包含保護資料免於未經許可的存取、損害與改變，以及實現從資料遺失和破壞中恢復的原則和程序。</li><br/>
+              </ol>
+            </p>
+            <h4>Physical Structures</h4>
+            <p>
+              Type of Connection:
+              <ul>
+                <li>Point-to-Point:<br/>A point-to-point connection provides a dedicated link between two devices.</li><br/>
+                <li>Multipoint:<br/>A multipoint connection is one in which more than two specific devices share a single link.</li><br/>
+                <img src="Type_of_Connection.jpg" alt="Type of Connection"><br/>
+              </ul>
+            </p>
+            <h4>Physical Topology</h4>
+            <p>
+              <ul>
+                <li>
+                  Mesh Topology(網格拓撲):<br/>Every device has a dedicated point-to-point link to every other device.<br/>We need n (n - 1) / 2 duplex-mode links.<br/><br/>
+                  Advantages:<br/>
+                  <ol>
+                    <li>使用專用鏈路保證每個連接都可以承載自己的數據負載，如果要消除鏈路必須由多個設備共用發生的流量問題。</li>
+                    <li>網格拓撲是強大的。如果一個連結不可用，它不會使整個系統喪失能力。</li>
+                    <li>有隱私或安全的優勢。</li><br/>
+                  </ol>
+                  disadvantages:<br/>
+                  <ol>
+                    <li>由於每個設備都必須連接到其他所有設備，因此安裝和重新連接很困難。</li>
+                    <li>布線的絕對體積會大於可用空間可以容納的範圍。</li>
+                    <li>連接每個鏈路（I/O 埠和電纜）所需的硬體非常昂貴。</li><br/>
+                  </ol>
+                </li>
+                <img src="Mesh_Topology.jpg" alt="Mesh Topology"/><br/><br/>
+                <li>Star Topology(星狀拓撲):<br/>Device has a dedicated point-to-point link only to a central controller, usually called a hub. The devices are not directly linked to one another.<br/>星形拓撲用於局域網(LAN)。高速 LAN 通常使用帶有中央集線器的星形拓撲。</li>
+                <img src="Star_Topology.jpg" alt="Star Topology"/><br/><br/>
+                <li>Bus Topology(匯流排拓撲):<br/>It is multipoint. One long cable acts as a backbone to link all the devices in a network.<br/>匯流排拓撲是早期局部區域網路設計中使用的首批拓撲之一。傳統的乙太網 LAN 可以使用匯流排拓撲，但它們現在不太受歡迎了。</li>
+                <img src="Bus_Topology.jpg" alt="Bus Topology"/><br/><br/>
+                <li>Ring Topology(環形拓撲):<br/>Device has a dedicated point-to-point connection with only the two devices on either side of it.<br/>當IBM推出其局域網Token Ring時，環形拓撲很普遍。如今，對更高速 LAN 的需求使得這種拓撲不太受歡迎。</li>
+                <img src="Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
+              </ul>
             </p>
 
-            <h3>Network Types</h3>
+            <h3 id="1.3">1.3 Network Types</h3>
+            <h4>Local Area Network</h4>
             <p>
-
+              局域網 （LAN） 通常是私有的，連接單個辦公室、建築物或園區中的某些主機。<br/>
+              LAN 中的每個主機都有一個標識碼和一個位址，該標識碼和位址唯一地定義 LAN 中的主機。<br/>
+              一個主機發送到另一個主機的數據包同時攜帶源主機和目標主機的位址。<br/><br/>
+              過去，網路中的所有主機都通過公共電纜連接，這意味著所有主機都會接收從一台主機發送到另一台主機的數據包。預期的收件者保留了數據包;其他人丟棄了數據包。<br/>
+              如今，大多數 LAN 都使用智慧連接交換機，該交換機能夠識別數據包的目標位址，並將數據包引導到其目標，而無需將其發送到所有其他主機。
+            </p>
+            <img src="Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
+            <h4>Wide Area Network</h4>
+            <p>
+              WAN具有更寬的地理跨度，跨越城鎮、州、國家甚至世界。<br/>
+              <ul>
+                <li>Point-to-Point WAN<br/>是透過傳輸介質（電纜或空氣）連接兩個通信設備的網路。</li>
+                <img src="Point-to-Point_WAN.jpg" alt="Point-to-Point WAN"/><br/><br/>
+                <li>Switched WAN<br/>是具有兩端以上端的網路。<br/>用於當今全球通信的骨幹網。<br/>交換 WAN 是通過交換機連接的多個點對點 WAN 的組合。</li>
+                <img src="Switched_WAN.jpg" alt="Switched WAN"/><br/><br/>
+              </ul>
+            </p>
+            <h4>Internet</h4>
+            <p>
+              今天，很少看到LAN或WAN是孤立的。它們彼此相連。<br/>
+              當連接兩個或多個Network時，它們會建立internetwork或internet。<br/>
+              例子:管理層租用了一個點對點專用WAN從服務提供者（如電話公司）並連接兩個 LAN。<br/>
+              當一台主機向同一辦公室中的另一台主機發送消息時，路由器(router)會阻止該消息，但交換機(switch)會將消息定向到目標。
+              <img src="internet.jpg" alt="internet"/><br/><br/>
+            </p>
+            <h4>Switching</h4>
+            <p>
+              An internet is a switched network in which a switch connects at least two links together.<br/>
+              <ul>
+                <li>Circuit-Switched Network<br/>在電路交換網路中，兩端系統之間始終可以使用稱為電路的專用連接。交換機只能使其處於活動狀態或非活動狀態。</li>
+                <img src="Circuit-Switched_Network.jpg" alt="Circuit-Switched Network"/><br/><br/>
+                <li>Packet-Switched Network<br/>在計算機網路中，兩端之間的通信是在稱為數據包(packets)的數據塊中完成的。分組交換網路中的路由器具有可以存儲和轉發包。</li>
+                <img src="Packet-Switched_Network.jpg" alt="Packet-Switched Network"/><br/><br/>
+              </ul>
+            </p>
+            <h4>The Internet</h4>
+            <p>
+              internet v.s. Internet<br/>
+              <ul>
+                <li>internet(注意小寫的i):<br/>是兩個或多個可以相互通信的網路。</li><br/>
+                <li>Internet(大寫I):<br/>最著名的internet被稱為Internet，由數千個internetwork組成。</li>
+                <img src="Internet.jpg" alt="Internet"/><br/><br/>
+              </ul>
+              Backbones和provider networks也稱為互聯網服務提供者(Internet Service Providers(ISPs))。<br/>
+              Backbones通常被稱為國際互聯網服務提供者;provider networks通常被稱為國家或區域ISP。
             </p>
 
-            <h3>Internet History</h3>
+            <h3 id="1.4">1.4 Internet History</h3>
+            <h4>Birth of the Internet</h4>
             <p>
-
+              1972年，Vint Cerf和Bob Kahn都是ARPANET核心團隊的一員，他們合作開展了他們所謂的互聯網專案。他們希望連結不同的網路，以便一個網路上的主機可以與另一個網路上的主機進行通信。
             </p>
 
-            <h3>Standards and Administration</h3>
+            <h3 id="1.5">1.5 Standards and Administration</h3>
+            <h4>Internet Standards</h4>
             <p>
-
+              互聯網標準(Internet Standards)是一個經過全面測試的規範，對使用互聯網的人有用並遵守。這是一項必須遵守的正式規定。規範達到互聯網標準狀態有一個嚴格的程式。<br/>
+              規範從互聯網草案(Internet draft)開始。互聯網草稿是一份工作檔（一項正在進行的工作），沒有正式地位，有效期為六個月。<br/>
+              根據互聯網當局的建議，草案可以作為徵求意見書(Request for Comment(RFC))發佈。每個 RFC 都經過編輯，分配一個編號，並提供給所有感興趣的各方。RFC 經過成熟度級別(Maturity Levels)，並根據其要求級別(Requirement Levels)進行分類。
+              <ul>
+                <li>Maturity Levels:<br/>建議的標準、草案標準、互聯網標準、歷史標準、實驗性和資訊性。</li><br/>
+                <img src="Maturity_Levels.jpg" alt="Maturity Levels"/><br/><br/>
+                <li>Requirement Levels:<br/>必需、推薦、選修、有限使用和不推薦</li>
+              </ul>
+            </p>
+            <h4>Internet Administration</h4>
+            <p>
+              The general organization of Internet administration(互聯網管理的一般組織)<br/>
+              <ul>
+                <li>Internet Society (ISOC) :<br/>為互聯網標準流程提供支援。</li><br/>
+                <li>Internet Architecture Board (IAB) :<br/>是ISOC的技術顧問。</li><br/>
+                <li>Internet Engineering Task Force (IETF) :<br/>是由互聯網工程指導小組(IESG)管理的工作組論壇。<br/>IETF負責識別操作問題並提出這些問題的解決方案。</li><br/>
+                <li>Internet Research Task Force (IRTF) :<br/>是由互聯網研究指導小組(IRSG)管理的工作組論壇。<br/>IRTF專注於與互聯網協定，應用程式，架構和技術相關的長期研究課題。</li>
+              </ul>
             </p>
           </div>
       </div>
