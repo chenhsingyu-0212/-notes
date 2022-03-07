@@ -29,6 +29,9 @@ h1{
     background-image: linear-gradient(120deg, aliceblue, white);
     padding:10px 20px;
     width:100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 #bar{
     background-color: var(--white);
@@ -63,19 +66,31 @@ h1{
 .callback{
     background-image: linear-gradient(120deg, #155799, #159957);
     padding:10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 103.675px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .grid-container {
     display: grid;
     grid-template-columns: 20% 80%;
-    padding: 50px 80px 50px 0px;
+    padding: 0px 20px 0px 0px;
 }
 .grid-container > div {
-    margin: 10px;
     font-size: 16px;
 }
+.item1{
+    margin: 10px;
+    grid-row: 1 / 10;
+}
 .item1 ul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin:0;
     padding:0;
+    height: 80%;
+    width: 19%;
+    position: fixed;
+    overflow: auto;
 }
 .item1 li{
     text-align: center;
@@ -92,14 +107,19 @@ h1{
     margin: 10px;
     padding: 10px;
 }
-.item1 a:hover{
+li a.active {
+    color: #f9fcff;
+    background-color: #157b76;
+}
+  
+li a:hover:not(.active) {
     color: #f9fcff;
     background-color: #157b76;
 }
 .item2{
+    margin: 40px 10px 20px 20px;
     padding: 50px 200px;
     background: #f9fcff;
-    border-radius: 20px;
     box-shadow: 10px 10px #157b76;
     border: 2px solid #157b76;
 }

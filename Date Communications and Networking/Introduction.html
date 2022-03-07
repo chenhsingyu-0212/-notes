@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="../notes.css?v1.16" media="screen,projection"/>
+    <link rel="stylesheet" href="../notes.css?v1.19" media="screen,projection"/>
     <title>Data Communications and Networking</title>
   </head>
   <body>
@@ -11,10 +11,11 @@
       <a href="../../notes/">回首頁</a>
     </div>
     <div class="callback"></div>
+    <div class="leave_blank"></div>
     <div class="grid-container">
         <div class="item1">
           <ul>
-            <li><a href="./Introduction.html">Chapter 1</a></li>
+            <li><a class="active" href="./Introduction.html">Chapter 1</a></li>
             <li><a href="#1.1">1.1 Data Communications</a></li>
             <li><a href="#1.2">1.2 Networks</a></li>
             <li><a href="#1.3">1.3 Network Types</a></li>
@@ -32,7 +33,9 @@
         </div>
         <div class="item2">
             <h2>Chapter 1_Introduction</h2>
-            <h3 id="1.1">1.1 Data Communications</h3>
+        </div>
+        <div class="item2" id="1.1">
+            <h3>1.1 Data Communications</h3>
             <h4>Components</h4>
             <p>
               Telecommunication(電話通訊) v.s. Data communication(資料通訊)<br/>
@@ -58,8 +61,9 @@
                 <li>Full-duplex(duplex):<br/>Both stations can transmit and receive simultaneously.(兩邊可以同時發送與接收)</li><br/>
               </ul>
             </p>
-
-            <h3 id="1.2">1.2 Networks</h3>
+        </div>
+        <div class="item2" id="1.2">
+            <h3>1.2 Networks</h3>
             <p>
               A network is the interconnection of a set of devices capable of communication.<br/>
               兩種物體之間，透過某種形式互相連接，以達到傳送的目的。<br/>
@@ -123,17 +127,18 @@
                 <img src="Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
               </ul>
             </p>
-
-            <h3 id="1.3">1.3 Network Types</h3>
+        </div>
+        <div class="item2" id="1.3">
+            <h3>1.3 Network Types</h3>
             <h4>Local Area Network</h4>
             <p>
-              局域網 （LAN） 通常是私有的，連接單個辦公室、建築物或園區中的某些主機。<br/>
+              局域網 (LAN) 通常是私有的，連接單個辦公室、建築物或園區中的某些主機。<br/>
               LAN 中的每個主機都有一個標識碼和一個位址，該標識碼和位址唯一地定義 LAN 中的主機。<br/>
               一個主機發送到另一個主機的數據包同時攜帶源主機和目標主機的位址。<br/><br/>
               過去，網路中的所有主機都通過公共電纜連接，這意味著所有主機都會接收從一台主機發送到另一台主機的數據包。預期的收件者保留了數據包;其他人丟棄了數據包。<br/>
               如今，大多數 LAN 都使用智慧連接交換機，該交換機能夠識別數據包的目標位址，並將數據包引導到其目標，而無需將其發送到所有其他主機。
+              <img src="LAN.jpg" alt="LAN"/><br/><br/>
             </p>
-            <img src="Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
             <h4>Wide Area Network</h4>
             <p>
               WAN具有更寬的地理跨度，跨越城鎮、州、國家甚至世界。<br/>
@@ -173,14 +178,16 @@
               Backbones和provider networks也稱為互聯網服務提供者(Internet Service Providers(ISPs))。<br/>
               Backbones通常被稱為國際互聯網服務提供者;provider networks通常被稱為國家或區域ISP。
             </p>
-
-            <h3 id="1.4">1.4 Internet History</h3>
+        </div>
+        <div class="item2" id="1.4">
+            <h3>1.4 Internet History</h3>
             <h4>Birth of the Internet</h4>
             <p>
               1972年，Vint Cerf和Bob Kahn都是ARPANET核心團隊的一員，他們合作開展了他們所謂的互聯網專案。他們希望連結不同的網路，以便一個網路上的主機可以與另一個網路上的主機進行通信。
             </p>
-
-            <h3 id="1.5">1.5 Standards and Administration</h3>
+        </div>
+        <div class="item2" id="1.5">
+            <h3>1.5 Standards and Administration</h3>
             <h4>Internet Standards</h4>
             <p>
               互聯網標準(Internet Standards)是一個經過全面測試的規範，對使用互聯網的人有用並遵守。這是一項必須遵守的正式規定。規範達到互聯網標準狀態有一個嚴格的程式。<br/>
@@ -202,7 +209,8 @@
                 <li>Internet Research Task Force (IRTF) :<br/>是由互聯網研究指導小組(IRSG)管理的工作組論壇。<br/>IRTF專注於與互聯網協定，應用程式，架構和技術相關的長期研究課題。</li>
               </ul>
             </p>
-          </div>
+        </div>
       </div>
+      <div class="leave_blank"></div>
   </body>
 </html>
