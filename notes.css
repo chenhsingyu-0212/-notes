@@ -32,6 +32,7 @@ h1{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    height: 100px;
 }
 #bar{
     background-color: var(--white);
@@ -54,8 +55,10 @@ h1{
     color:black;
 }
 #footer{
-    background-color:gray;
-    padding:1px;
+    text-align: center;
+    margin: 20px 10px 40px 20px;
+    background-image: linear-gradient(120deg, aliceblue, white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -68,7 +71,7 @@ h1{
     padding:10px;
     position: -webkit-sticky;
     position: sticky;
-    top: 103.675px;
+    top: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .grid-container {
@@ -81,7 +84,7 @@ h1{
 }
 .item1{
     margin: 10px;
-    grid-row: 1 / 10;
+    grid-row: 1 / 20;
 }
 .item1 ul{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -107,12 +110,12 @@ h1{
     margin: 10px;
     padding: 10px;
 }
-li a.active {
+.item1 a.active {
     color: #f9fcff;
     background-color: #157b76;
 }
   
-li a:hover:not(.active) {
+.item1 a:hover:not(.active) {
     color: #f9fcff;
     background-color: #157b76;
 }

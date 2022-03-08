@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="../notes.css?v1.16" media="screen,projection"/>
+    <link rel="stylesheet" href="../notes.css?v1.19" media="screen,projection"/>
     <title>Data Communications and Networking</title>
   </head>
   <body>
@@ -15,12 +15,12 @@
         <div class="item1">
           <ul>
             <li><a href="./Introduction.html">Chapter 1</a></li>
-            <li><a href="#1.1">1.1 Data Communications</a></li>
-            <li><a href="#1.2">1.2 Networks</a></li>
-            <li><a href="#1.3">1.3 Network Types</a></li>
-            <li><a href="#1.4">1.4 Internet History</a></li>
-            <li><a href="#1.5">1.5 Standards and Administration</a></li>
-            <li><a href="./Headings.html">Chapter 2</a></li>
+            <hr/>
+            <li><a class="active" href="./Network Models.html">Chapter 2</a></li>
+            <li><a href="#2.1" style="border-radius: 0px; margin: 0px 10px;">2.1 Protocol Layering</a></li>
+            <li><a href="#2.2" style="border-radius: 0px; margin: 0px 10px;">2.2 TCP/IP Protocol Suite</a></li>
+            <li><a href="#2.3" style="border-radius: 0px; margin: 0px 10px 10px 10px;">2.3 OSI Model</a></li>
+            <hr/>
             <li><a href="./Paragraphs.html">Chapter 3</a></li>
             <li><a href="./TextFormatting.html">Chapter 4</a></li>
             <li><a href="./Links.html">Chapter 5</a></li>
@@ -31,43 +31,179 @@
           </ul>
         </div>
         <div class="item2">
-            <h2>Chapter 2_Network Models</h2>
-            <h3 id="1.1">1.1 Data Communications</h3>
-            <h4>Components</h4>
-            <p>
-              
-            </p>
-            
-            <h3 id="1.2">1.2 Networks</h3>
-            <p>
-              
-            </p>
-
-            <h3 id="1.3">1.3 Network Types</h3>
-            <h4>Local Area Network</h4>
-            <p>
-              
-            </p>
-
-            <h3 id="1.4">1.4 Internet History</h3>
-            <h4>Birth of the Internet</h4>
-            <p>
-              
-            </p>
-
-            <h3 id="1.5">1.5 Standards and Administration</h3>
-            <h4>Internet Standards</h4>
-            <p>
-              互聯網標準(Internet Standards)是一個經過全面測試的規範，對使用互聯網的人有用並遵守。這是一項必須遵守的正式規定。規範達到互聯網標準狀態有一個嚴格的程式。<br/>
-              規範從互聯網草案(Internet draft)開始。互聯網草稿是一份工作檔（一項正在進行的工作），沒有正式地位，有效期為六個月。<br/>
-              根據互聯網當局的建議，草案可以作為徵求意見書(Request for Comment(RFC))發佈。每個 RFC 都經過編輯，分配一個編號，並提供給所有感興趣的各方。RFC 經過成熟度級別(Maturity Levels)，並根據其要求級別(Requirement Levels)進行分類。
-              <ul>
-                <li>Maturity Levels:<br/>建議的標準、草案標準、互聯網標準、歷史標準、實驗性和資訊性。</li><br/>
-                <img src="Maturity_Levels.jpg" alt="Maturity Levels"/><br/><br/>
-                <li>Requirement Levels:<br/>必需、推薦、選修、有限使用和不推薦</li>
-              </ul>
-            </p>
-          </div>
-      </div>
+          <h2>Chapter 2_Network Models</h2>
+        </div>
+        <div id="2.1"></div>
+        <div class="item2">
+          <br/>
+          <h3>2.1 Protocol Layering</h3>
+          <h4>Scenarios</h4>
+          <p>
+            <ul>
+              <li>First Scenario:<br/>在第一種情況下，通信非常簡單，只能在一層中進行。</li><br/>
+              <img src="A_single-layer_protocol.jpg" alt="A single-layer protocol"/><br/><br/>
+              <li>Second Scenario:<br/>通過帖子使用普通郵件對話。但是，如果信件被截獲，不希望自己的想法被其他人透露。<br/>用加密/解密技術，信件的寄件者對其進行加密，使其無法被入侵者讀取。信件的接收者對其進行解密以獲取原始信件。</li><br/>
+              <img src="A_three-layer_protocol.jpg" alt="A three-layer protocol"/><br/><br/>
+            </ul>
+          </p>
+          <h4>Principles of Protocol Layering</h4>
+          <p>
+            <ul>
+              <li>First Principle:<br/>想要雙向通信，我們需要使每一層都能夠執行兩個相反的任務。</li><br/>
+              <li>Second Principle:<br/>兩個網站上每層下的兩個對象應該是相同的。都是文字或是都是密文。</li><br/>
+            </ul>
+          </p>
+          <h4>Logical Connections</h4>
+          <p>
+            每一層都有一個邏輯（虛構的）連接，通過它他們可以發送從該層創建的物件。<br/>
+            邏輯連接的概念將幫助我們更好地理解我們在數據通信和網路中遇到的分層任務。<br/><br/>
+            <img src="Logical_connection_between_peer_layers.jpg" alt="Logical connection between peer layers"/><br/><br/>
+          </p>
+        </div>
+        <div id="2.2"></div>
+        <div class="item2">
+          <br/>
+          <h3>2.2 TCP/IP Protocol Suite</h3>
+          <p>
+            TCP/IP (Transmission Control Protocol/Internet Protocol)。<br/>
+            TCP / IP是當今互聯網中使用的協定套件(一組組織在不同層中的協定)。<br/>
+            它是一個由互動式模組組成的分層協定，每個模組都提供特定的功能。<br/>
+            術語「分層」是指每個上層協定都由一個或多個較低級別協定提供的服務支援。
+          </p>
+          <h4>Layered Architecture</h4>
+          <p>
+            <img src="Layers_in_the_TCP/IP_protocol_suite.jpg" alt="Layers in the TCP/IP protocol suite"/><br/><br/>
+            <img src="Communication_through_an_internet.jpg" alt="Communication through an internet"/><br/>
+            <ul>
+              <li>
+                兩個主機涉及所有五個層:<br/>
+                源主機需要在應用程式層中創建一條消息，並將其發送到各層，以便將其物理發送到目標主機。<br/>
+                目標主機需要在物理層接收通信，然後通過其他層將其傳遞到應用程式層。
+              </li><br/>
+              <li>
+                路由器僅涉及三層:<br/>
+                只要路由器僅用於路由，路由器中就沒有傳輸層或應用層。<br/>
+                儘管路由器始終涉及一個網路層，但它涉及 n 個鏈路層和物理層的組合，其中 n 是路由器連接到的鏈路數。
+              </li><br/>
+              <li>
+                鏈路中的鏈路層交換機僅涉及兩層：<br/>
+                數據鏈路和物理層。<br/>
+                儘管每個交換機都有兩個不同的連接，但這些連接位於同一鏈路中，該鏈路僅使用一組協定。<br/>
+                這意味著，與路由器不同，鏈路層交換機僅涉及一個數據鏈路和一個物理層。
+              </li>
+            </ul>
+          </p>
+          <h4>Layers in the TCP/IP Protocol Suite</h4>
+          <p>
+            <img src="Logical_connections_between_layers_of_the_TCP/IP_protocol_suite.jpg" alt="Logical connections between layers of the TCP/IP protocol suite"/><br/><br/>
+            應用程式、傳輸層和網路層的職責是端到端的(end-to-end)。<br/>
+            但是，數據鏈路和物理層的職責是跳到跳(hop-to-hop)，其中躍點是主機或路由器。<br/>
+            換句話說，前三層的責任域是互聯網，而兩層下層的責任域是連結。<br/>
+            任何路由器或鏈路層交換機都不應更改數據單元（數據包）。<br/>
+            在最下面的兩層中，主機創建的數據包僅由路由器更改，而不由鏈路層交換機更改。<br/><br/>
+            <img src="Identical_objects_in_the_TCP/IP_protocol_suite.jpg" alt="Identical objects in the TCP/IP protocol suite"/><br/><br/>
+            儘管網路層的邏輯連接位於兩個主機之間，但在這種情況下，我們只能說兩個躍點之間存在相同的對象，因為路由器可能會在網路層對數據包進行分段，併發送比接收的更多的數據包。<br/>
+            請注意，兩個躍點之間的連結不會更改物件。
+          </p>
+          <h4>Description of Each Layer</h4>
+          <p>
+            <ul>
+              <li>Physical Layer:<br/>定義一些電器，機械，過程和規範。</li><br/>
+              <li>Data-link Layer:<br/>主要是用來定義來源/目的的MAC地址，以及所使用的協定為何(IPV4/IPV6)。<br/>它是封包從一個裝置的網路層傳輸到另外一個裝置的網路層的方法。</li><br/>
+              <li>Network Layer:<br/>網路層解決在一個單一網路上傳輸封包的問題、將資料從源網路傳輸到目的網路，這就牽涉到在網路組成的網上選擇路徑將封包傳輸。<br/>會在此定義該封包需要送往哪一個IP位置。</li><br/>
+              <li>Transport Layer:<br/>傳輸層的協定，能夠解決諸如端到端可靠性(「資料是否已經到達目的地？」)和保證資料按照正確的順序到達這樣的問題。<br/>紀錄來源/目的Port位置，此外亦會給每一個封包追蹤號碼，並在目的地進行檢查。</li><br/>
+              <li>Application Layer:<br/>該層包括所有和應用程式協同工作，利用基礎網路交換應用程式專用的資料的協定。<br/>位址用名字表示，如:@gmail.com</li><br/>
+            </ul>
+          </p>
+          <h4>Encapsulation and Decapsulation</h4>
+          <p>
+            <img src="Encapsulation_and_Decapsulation.jpg" alt="Encapsulation and Decapsulation"/><br/><br/>
+            <ul>
+              <li>
+                Encapsulation at the Source Host:<br/>
+                在源頭上，我們只有封裝。
+                <ol>
+                  <li>
+                    在應用程式層，要交換的數據稱為消息(message)。<br/>
+                    消息通常不包含任何標頭或尾部。<br/>
+                    消息將傳遞到傳輸層。
+                  </li><br/>
+                  <li>
+                    傳輸層將消息作為有效負載，即傳輸層應處理的負載。<br/>
+                    它將傳輸層標頭添加到有效負載中，其中包含要通信的源和目標應用程式識別碼，以及端到端傳遞消息所需的一些更多資訊，例如流、錯誤控制或擁塞控制所需的資訊。
+                    結果是傳輸層數據包，稱為段(segment，在 TCP 中)和用戶數據報(user datagram，在 UDP 中)。<br/>
+                    然後，傳輸層將數據包傳遞到網路層。
+                  </li><br/>
+                  <li>
+                    網路層將傳輸層數據包作為數據或有效負載，並將其自己的標頭添加到有效負載中。<br/>
+                    標頭包含源主機和目標主機的位址，以及用於標頭錯誤檢查、碎片資訊等的一些更多資訊。<br/>
+                    結果是網路層數據包，稱為數據報(datagram)。<br/>
+                    然後，網路層將數據包傳遞到數據鏈路層。
+                  </li><br/>
+                  <li>
+                    數據鏈路層將網路層數據包作為數據或有效負載，並添加自己的標頭，其中包含主機或下一躍點（路由器）的鏈路層位址。<br/>
+                    結果是鏈路層數據包，稱為幀(frame)。<br/>
+                    幀被傳遞到物理層進行傳輸。
+                  </li><br/>
+                </ol>
+              </li>
+              <li>
+                Decapsulation and Encapsulation at the Router:<br/>
+                在路由器上，我們同時具有解封裝和封裝，因為路由器連接到兩個或多個鏈路。
+                <ol>
+                  <li>
+                    將一組位傳遞到數據鏈路層后，此層將從幀中解封數據報並將其傳遞到網路層。
+                  </li><br/>
+                  <li>
+                    網路層僅檢查數據報頭中的源位址和目標位址，並查閱其轉發表以查找要將數據報傳遞到的下一躍點。<br/>
+                    路由器中的網路層不應更改數據報的內容，除非如果數據報太大而無法通過下一個鏈路，則需要對數據報進行分段。<br/>
+                    然後，數據報將傳遞到下一個鏈接的數據鏈路層。
+                  </li><br/>
+                  <li>
+                    下一個鏈接的數據鏈路層將數據報封裝在幀中，並將其傳遞到物理層進行傳輸。
+                  </li><br/>
+                </ol>
+              </li>
+              <li>
+                Decapsulation at the Destination Host:<br/>
+                在目標主機上，每一層僅解封收到的數據包，刪除有效負載(payload)，並將有效負載傳遞到下一個更高層的協定，直到消息到達應用層。<br/>
+                有必要說主機中的解封涉及錯誤檢查。
+              </li>
+            </ul>
+          </p>
+          <h4>Addressing</h4>
+          <p>
+            任何涉及雙方的通信都需要兩個位址：源位址和目標位址。雖然看起來我們需要五對位址，每層一對，但我們通常只有四對，因為物理層不需要位址;物理層的數據交換單位是位，絕對不能有位址。<br/><br/>
+            <img src="Addressing_in_the_TCP/IP_protocol_suite.jpg" alt="Addressing in the TCP/IP protocol suite"/><br/><br/>
+          </p>
+          <h4>Multiplexing and Demultiplexing</h4>
+          <p>
+            由於TCP/IP協定套件在某些層使用多個協定，因此我們可以說我們在源位置具有多路複用，在目標位置具有解複用。<br/><br/>
+            <img src="Multiplexing_and_demultiplexing.jpg" alt="Multiplexing and demultiplexing"/><br/><br/>
+          </p>
+        </div>
+        <div id="2.3"></div>
+        <div class="item2">
+          <br/>
+          <h3>2.3 OSI Model</h3>
+          <p>
+            <ul>
+              <li>International Organization for Standardization (ISO) :是一個致力於全球國際標準協定的跨國機構。</li>
+              <li>Open Systems Interconnection (OSI) model :涵蓋了網路通信的所有方面。</li>
+            </ul>
+            ISO is the organization; OSI is the model.
+          </p>
+          <h4>The OSI model</h4>
+          <p>
+            <img src="The_OSI_model.jpg" alt="The OSI model"/><br/><br/>
+          </p>
+          <h4>OSI versus TCP/IP</h4>
+          <p>
+            <img src="TCP/IP_and_OSI_model.jpg" alt="TCP/IP and OSI model"/><br/><br/>
+            OSI 模型出現在 TCP/IP 協定套件之後。<br/>
+            OSI 現在多用來教學。TCP/IP 才實際在應用。
+        </div>
+        <div id="footer"><p>If something wrong, please mail:hsingyuchen0212@gmail.com</p></div>
+    </div>
   </body>
 </html>
