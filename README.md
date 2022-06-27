@@ -13,6 +13,7 @@
       <li><a href="./CSS.html">CSS</a></li>
       <li><a href="./C.html">C</a></li>
       <li><a href="./C++.html">C++</a></li>
+      <li><a href="./Java.html">Java</a></li>
       <li><a href="./Javascript.html">Javascript</a></li>
     </ul><br/>
   <li>協作工具</li>
