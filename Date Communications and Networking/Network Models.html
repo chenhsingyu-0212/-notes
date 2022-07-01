@@ -21,8 +21,8 @@
             <li><a href="#2.2" style="border-radius: 0px; margin: 0px 10px;">2.2 TCP/IP Protocol Suite</a></li>
             <li><a href="#2.3" style="border-radius: 0px; margin: 0px 10px 10px 10px;">2.3 OSI Model</a></li>
             <hr/>
-            <li><a href="./Paragraphs.html">Chapter 3</a></li>
-            <li><a href="./TextFormatting.html">Chapter 4</a></li>
+            <li><a href="./Introduction to Physical Layer.html">Chapter 3</a></li>
+            <li><a href="./Digital Transmission.html">Chapter 4</a></li>
             <li><a href="./Links.html">Chapter 5</a></li>
             <li><a href="./Images.html">Chapter 6</a></li>
             <li><a href="./Tables.html">Chapter 7</a></li>
@@ -41,9 +41,9 @@
           <p>
             <ul>
               <li>First Scenario:<br/>在第一種情況下，通信非常簡單，只能在一層中進行。</li><br/>
-              <img src="A_single-layer_protocol.jpg" alt="A single-layer protocol"/><br/><br/>
+              <img src="./images/A_single-layer_protocol.jpg" alt="A single-layer protocol"/><br/><br/>
               <li>Second Scenario:<br/>通過帖子使用普通郵件對話。但是，如果信件被截獲，不希望自己的想法被其他人透露。<br/>用加密/解密技術，信件的寄件者對其進行加密，使其無法被入侵者讀取。信件的接收者對其進行解密以獲取原始信件。</li><br/>
-              <img src="A_three-layer_protocol.jpg" alt="A three-layer protocol"/><br/><br/>
+              <img src="./images/A_three-layer_protocol.jpg" alt="A three-layer protocol"/><br/><br/>
             </ul>
           </p>
           <h4>Principles of Protocol Layering</h4>
@@ -57,7 +57,7 @@
           <p>
             每一層都有一個邏輯（虛構的）連接，通過它他們可以發送從該層創建的物件。<br/>
             邏輯連接的概念將幫助我們更好地理解我們在數據通信和網路中遇到的分層任務。<br/><br/>
-            <img src="Logical_connection_between_peer_layers.jpg" alt="Logical connection between peer layers"/><br/><br/>
+            <img src="./images/Logical_connection_between_peer_layers.jpg" alt="Logical connection between peer layers"/><br/><br/>
           </p>
         </div>
         <div id="2.2"></div>
@@ -72,8 +72,8 @@
           </p>
           <h4>Layered Architecture</h4>
           <p>
-            <img src="Layers_in_the_TCP/IP_protocol_suite.jpg" alt="Layers in the TCP/IP protocol suite"/><br/><br/>
-            <img src="Communication_through_an_internet.jpg" alt="Communication through an internet"/><br/>
+            <img src="./images/Layers_in_the_TCP_IP_protocol_suite.jpg" alt="Layers in the TCP/IP protocol suite"/><br/><br/>
+            <img src="./images/Communication_through_an_internet.jpg" alt="Communication through an internet"/><br/>
             <ul>
               <li>
                 兩個主機涉及所有五個層:<br/>
@@ -95,13 +95,13 @@
           </p>
           <h4>Layers in the TCP/IP Protocol Suite</h4>
           <p>
-            <img src="Logical_connections_between_layers_of_the_TCP/IP_protocol_suite.jpg" alt="Logical connections between layers of the TCP/IP protocol suite"/><br/><br/>
+            <img src="./images/Logical_connections_between_layers_of_the_TCP_IP_protocol_suite.jpg" alt="Logical connections between layers of the TCP/IP protocol suite"/><br/><br/>
             應用程式、傳輸層和網路層的職責是端到端的(end-to-end)。<br/>
             但是，數據鏈路和物理層的職責是跳到跳(hop-to-hop)，其中躍點是主機或路由器。<br/>
             換句話說，前三層的責任域是互聯網，而兩層下層的責任域是連結。<br/>
             任何路由器或鏈路層交換機都不應更改數據單元（數據包）。<br/>
             在最下面的兩層中，主機創建的數據包僅由路由器更改，而不由鏈路層交換機更改。<br/><br/>
-            <img src="Identical_objects_in_the_TCP/IP_protocol_suite.jpg" alt="Identical objects in the TCP/IP protocol suite"/><br/><br/>
+            <img src="./images/Identical_objects_in_the_TCP_IP_protocol_suite.jpg" alt="Identical objects in the TCP/IP protocol suite"/><br/><br/>
             儘管網路層的邏輯連接位於兩個主機之間，但在這種情況下，我們只能說兩個躍點之間存在相同的對象，因為路由器可能會在網路層對數據包進行分段，併發送比接收的更多的數據包。<br/>
             請注意，兩個躍點之間的連結不會更改物件。
           </p>
@@ -117,7 +117,7 @@
           </p>
           <h4>Encapsulation and Decapsulation</h4>
           <p>
-            <img src="Encapsulation_and_Decapsulation.jpg" alt="Encapsulation and Decapsulation"/><br/><br/>
+            <img src="./images/Encapsulation_and_Decapsulation.jpg" alt="Encapsulation and Decapsulation"/><br/><br/>
             <ul>
               <li>
                 Encapsulation at the Source Host:<br/>
@@ -174,12 +174,12 @@
           <h4>Addressing</h4>
           <p>
             任何涉及雙方的通信都需要兩個位址：源位址和目標位址。雖然看起來我們需要五對位址，每層一對，但我們通常只有四對，因為物理層不需要位址;物理層的數據交換單位是位，絕對不能有位址。<br/><br/>
-            <img src="Addressing_in_the_TCP/IP_protocol_suite.jpg" alt="Addressing in the TCP/IP protocol suite"/><br/><br/>
+            <img src="./images/Addressing_in_the_TCP_IP_protocol_suite.jpg" alt="Addressing in the TCP/IP protocol suite"/><br/><br/>
           </p>
           <h4>Multiplexing and Demultiplexing</h4>
           <p>
             由於TCP/IP協定套件在某些層使用多個協定，因此我們可以說我們在源位置具有多路複用，在目標位置具有解複用。<br/><br/>
-            <img src="Multiplexing_and_demultiplexing.jpg" alt="Multiplexing and demultiplexing"/><br/><br/>
+            <img src="./images/Multiplexing_and_demultiplexing.jpg" alt="Multiplexing and demultiplexing"/><br/><br/>
           </p>
         </div>
         <div id="2.3"></div>
@@ -195,11 +195,11 @@
           </p>
           <h4>The OSI model</h4>
           <p>
-            <img src="The_OSI_model.jpg" alt="The OSI model"/><br/><br/>
+            <img src="./images/The_OSI_model.jpg" alt="The OSI model"/><br/><br/>
           </p>
           <h4>OSI versus TCP/IP</h4>
           <p>
-            <img src="TCP/IP_and_OSI_model.jpg" alt="TCP/IP and OSI model"/><br/><br/>
+            <img src="./images/TCP_IP_and_OSI_model.jpg" alt="TCP/IP and OSI model"/><br/><br/>
             OSI 模型出現在 TCP/IP 協定套件之後。<br/>
             OSI 現在多用來教學。TCP/IP 才實際在應用。
         </div>

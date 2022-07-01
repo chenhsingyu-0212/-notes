@@ -23,8 +23,8 @@
             <li><a href="#1.5" style="border-radius: 0px; margin: 0px 10px 10px 10px;">1.5 Standards and Administration</a></li>
             <hr/>
             <li><a href="./Network Models.html">Chapter 2</a></li>
-            <li><a href="./Paragraphs.html">Chapter 3</a></li>
-            <li><a href="./TextFormatting.html">Chapter 4</a></li>
+            <li><a href="./Introduction to Physical Layer.html">Chapter 3</a></li>
+            <li><a href="./Digital Transmission.html">Chapter 4</a></li>
             <li><a href="./Links.html">Chapter 5</a></li>
             <li><a href="./Images.html">Chapter 6</a></li>
             <li><a href="./Tables.html">Chapter 7</a></li>
@@ -102,7 +102,7 @@
               <ul>
                 <li>Point-to-Point:<br/>A point-to-point connection provides a dedicated link between two devices.</li><br/>
                 <li>Multipoint:<br/>A multipoint connection is one in which more than two specific devices share a single link.</li><br/>
-                <img src="Type_of_Connection.jpg" alt="Type of Connection"><br/>
+                <img src="./images/Type_of_Connection.jpg" alt="Type of Connection"><br/>
               </ul>
             </p>
             <h4>Physical Topology</h4>
@@ -123,13 +123,13 @@
                     <li>連接每個鏈路（I/O 埠和電纜）所需的硬體非常昂貴。</li><br/>
                   </ol>
                 </li>
-                <img src="Mesh_Topology.jpg" alt="Mesh Topology"/><br/><br/>
+                <img src="./images/Mesh_Topology.jpg" alt="Mesh Topology"/><br/><br/>
                 <li>Star Topology(星狀拓撲):<br/>Device has a dedicated point-to-point link only to a central controller, usually called a hub. The devices are not directly linked to one another.<br/>星形拓撲用於局域網(LAN)。高速 LAN 通常使用帶有中央集線器的星形拓撲。</li>
-                <img src="Star_Topology.jpg" alt="Star Topology"/><br/><br/>
+                <img src="./images/Star_Topology.jpg" alt="Star Topology"/><br/><br/>
                 <li>Bus Topology(匯流排拓撲):<br/>It is multipoint. One long cable acts as a backbone to link all the devices in a network.<br/>匯流排拓撲是早期局部區域網路設計中使用的首批拓撲之一。傳統的乙太網 LAN 可以使用匯流排拓撲，但它們現在不太受歡迎了。</li>
-                <img src="Bus_Topology.jpg" alt="Bus Topology"/><br/><br/>
+                <img src="./images/Bus_Topology.jpg" alt="Bus Topology"/><br/><br/>
                 <li>Ring Topology(環形拓撲):<br/>Device has a dedicated point-to-point connection with only the two devices on either side of it.<br/>當IBM推出其局域網Token Ring時，環形拓撲很普遍。如今，對更高速 LAN 的需求使得這種拓撲不太受歡迎。</li>
-                <img src="Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
+                <img src="./images/Ring_Topology.jpg" alt="Ring Topology"/><br/><br/>
               </ul>
             </p>
         </div>
@@ -144,16 +144,16 @@
               一個主機發送到另一個主機的數據包同時攜帶源主機和目標主機的位址。<br/><br/>
               過去，網路中的所有主機都通過公共電纜連接，這意味著所有主機都會接收從一台主機發送到另一台主機的數據包。預期的收件者保留了數據包;其他人丟棄了數據包。<br/>
               如今，大多數 LAN 都使用智慧連接交換機，該交換機能夠識別數據包的目標位址，並將數據包引導到其目標，而無需將其發送到所有其他主機。
-              <img src="LAN.jpg" alt="LAN"/><br/><br/>
+              <img src="./images/LAN.jpg" alt="LAN"/><br/><br/>
             </p>
             <h4>Wide Area Network</h4>
             <p>
               WAN具有更寬的地理跨度，跨越城鎮、州、國家甚至世界。<br/>
               <ul>
                 <li>Point-to-Point WAN<br/>是透過傳輸介質（電纜或空氣）連接兩個通信設備的網路。</li>
-                <img src="Point-to-Point_WAN.jpg" alt="Point-to-Point WAN"/><br/><br/>
+                <img src="./images/Point-to-Point_WAN.jpg" alt="Point-to-Point WAN"/><br/><br/>
                 <li>Switched WAN<br/>是具有兩端以上端的網路。<br/>用於當今全球通信的骨幹網。<br/>交換 WAN 是通過交換機連接的多個點對點 WAN 的組合。</li>
-                <img src="Switched_WAN.jpg" alt="Switched WAN"/><br/><br/>
+                <img src="./images/Switched_WAN.jpg" alt="Switched WAN"/><br/><br/>
               </ul>
             </p>
             <h4>Internet</h4>
@@ -161,17 +161,17 @@
               今天，很少看到LAN或WAN是孤立的。它們彼此相連。<br/>
               當連接兩個或多個Network時，它們會建立internetwork或internet。<br/>
               例子:管理層租用了一個點對點專用WAN從服務提供者（如電話公司）並連接兩個 LAN。<br/>
-              當一台主機向同一辦公室中的另一台主機發送消息時，路由器(router)會阻止該消息，但交換機(switch)會將消息定向到目標。
-              <img src="internet.jpg" alt="internet"/><br/><br/>
+              當一台主機向同一辦公室中的另一台主機發送消息時，路由器(router)會阻止該消息，但交換機(switch)會將消息定向到目標。<br/>
+              <img src="./images/internet.jpg" alt="internet"/><br/><br/>
             </p>
             <h4>Switching</h4>
             <p>
               An internet is a switched network in which a switch connects at least two links together.<br/>
               <ul>
                 <li>Circuit-Switched Network<br/>在電路交換網路中，兩端系統之間始終可以使用稱為電路的專用連接。交換機只能使其處於活動狀態或非活動狀態。</li>
-                <img src="Circuit-Switched_Network.jpg" alt="Circuit-Switched Network"/><br/><br/>
+                <img src="./images/Circuit-Switched_Network.jpg" alt="Circuit-Switched Network"/><br/><br/>
                 <li>Packet-Switched Network<br/>在計算機網路中，兩端之間的通信是在稱為數據包(packets)的數據塊中完成的。分組交換網路中的路由器具有可以存儲和轉發包。</li>
-                <img src="Packet-Switched_Network.jpg" alt="Packet-Switched Network"/><br/><br/>
+                <img src="./images/Packet-Switched_Network.jpg" alt="Packet-Switched Network"/><br/><br/>
               </ul>
             </p>
             <h4>The Internet</h4>
@@ -180,7 +180,7 @@
               <ul>
                 <li>internet(注意小寫的i):<br/>是兩個或多個可以相互通信的網路。</li><br/>
                 <li>Internet(大寫I):<br/>最著名的internet被稱為Internet，由數千個internetwork組成。</li>
-                <img src="Internet.jpg" alt="Internet"/><br/><br/>
+                <img src="./images/Internet_I.jpg" alt="Internet"/><br/><br/>
               </ul>
               Backbones和provider networks也稱為互聯網服務提供者(Internet Service Providers(ISPs))。<br/>
               Backbones通常被稱為國際互聯網服務提供者;provider networks通常被稱為國家或區域ISP。
@@ -206,7 +206,7 @@
               根據互聯網當局的建議，草案可以作為徵求意見書(Request for Comment(RFC))發佈。每個 RFC 都經過編輯，分配一個編號，並提供給所有感興趣的各方。RFC 經過成熟度級別(Maturity Levels)，並根據其要求級別(Requirement Levels)進行分類。
               <ul>
                 <li>Maturity Levels:<br/>建議的標準、草案標準、互聯網標準、歷史標準、實驗性和資訊性。</li><br/>
-                <img src="Maturity_Levels.jpg" alt="Maturity Levels"/><br/><br/>
+                <img src="./images/Maturity_Levels.jpg" alt="Maturity Levels"/><br/><br/>
                 <li>Requirement Levels:<br/>必需、推薦、選修、有限使用和不推薦</li>
               </ul>
             </p>

@@ -24,4 +24,8 @@
       <li><a href="./Calculus.html">微積分</a></li>
       <li><a href="./Discrete Mathematics.html">離散數學</a></li>
     </ul><br/>
+  <li>經濟學</li>
+    <ul>
+      <li><a href="./Financial Investment and Management/Investment Vehicle.html">投資與理財規劃</li>
+    </ul>
 </ul>
