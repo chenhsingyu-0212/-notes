@@ -1,7 +1,7 @@
 <h1 style="display:inline-block;">Hsing-Yu Chen 陳幸妤</h1>
 
 <div>
-  <a href="./me.html" style="display:inline-block; :float:right; text-align: center;
+  <a href="./me.html" style="display:inline-block; float:right; text-align: center;
     text-decoration: none;
     color: #f9fcff;
     background-color: #157b76;
