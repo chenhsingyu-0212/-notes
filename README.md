@@ -1,6 +1,14 @@
 <h1>Hsing-Yu Chen 陳幸妤</h1>
 
 <div>
+  <a href="./notes.html" style="display:inline-block; float:right;  text-align: center;
+    text-decoration: none;
+    color: #f9fcff;
+    background-color: #157b76;
+    border:2px solid #157b76;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;">Start</a>
   <a href="./me.html" style="display:inline-block; float:right; text-align: center;
     text-decoration: none;
     color: #f9fcff;
@@ -9,14 +17,6 @@
     border-radius: 5px;
     margin: 20px;
     padding: 10px;">自我介紹</a>
-  <a href="./notes.html" style="display:inline-block; float:right;  text-align: center;
-    text-decoration: none;
-    color: #f9fcff;
-    background-color: #157b76;
-    border:2px solid #157b76;
-    border-radius: 5px;
-    margin: 20px 10px;
-    padding: 10px;">Start</a>
 </div>
 <br/>
 
