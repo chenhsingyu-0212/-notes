@@ -1,4 +1,4 @@
-<h1 style="display:inline-block;">Hsing-Yu Chen 陳幸妤</h1>
+<h1>Hsing-Yu Chen 陳幸妤</h1>
 
 <div>
   <a href="./me.html" style="display:inline-block; float:right; text-align: center;
@@ -15,9 +15,10 @@
     background-color: #157b76;
     border:2px solid #157b76;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 10px;
     padding: 10px;">Start</a>
 </div>
+<br/>
 
 <hr/>
 先介紹一下這個網站的由來吧!<br/>
