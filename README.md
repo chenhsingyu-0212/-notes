@@ -1,7 +1,7 @@
-# Hsing-Yu Chen 陳幸妤
+<h1 style="display:inline-block;">Hsing-Yu Chen 陳幸妤</h1>
 
 <div>
-  <a href="./me.html" style="float:right; text-align: center;
+  <a href="./me.html" style="display:inline-block; :float:right; text-align: center;
     text-decoration: none;
     color: #f9fcff;
     background-color: #157b76;
@@ -9,7 +9,7 @@
     border-radius: 5px;
     margin: 20px;
     padding: 10px;">自我介紹</a>
-  <a href="./notes.html" style="float:right;  text-align: center;
+  <a href="./notes.html" style="display:inline-block; float:right;  text-align: center;
     text-decoration: none;
     color: #f9fcff;
     background-color: #157b76;
@@ -25,7 +25,7 @@
 裡面有些是我因為興趣而去觸碰的領域，有些是課業上的知識，而這個網站我致力於將複雜的知識簡單化，
 但因為目前這是我個人的網站，也只有我再製作，內容偏少，現在努力朝向工作室前進!
 <hr/>
-<h1>演進</h1>
+<h2>演進</h2>
 <p>於2021/09建立此網站</p>
 <p>敬請期待......</p>
 <hr/>
