@@ -1,4 +1,4 @@
-# notes
+# Hsing-Yu Chen
 各種科目筆記整理<br/>
 <ul>
   <li>資訊工程(理論)</li>
@@ -13,7 +13,7 @@
       <li><a href="./CSS.html">CSS</a></li>
       <li><a href="./C.html">C</a></li>
       <li><a href="./C++.html">C++</a></li>
-      <li><a href="./Java.html">Java</a></li>
+      <li><a href="./Java/Java.html">Java</a></li>
       <li><a href="./Javascript.html">Javascript</a></li>
     </ul><br/>
   <li>協作工具</li>
